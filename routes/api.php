@@ -19,9 +19,16 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::middleware('api')->group(function () {
-    Route::get('candidates', 'CandidateController@index');
-    Route::get('candidates/{id}', 'CandidateController@show');
-    Route::post('candidates', 'CandidateController@store');
-    Route::put('candidates/{id}', 'CandidateController@update');
-    Route::delete('candidates/{id}', 'CandidateController@delete');
+    Route::get('candidates-profiles', 'CandidateProfileController@index');
+    Route::get('candidates-profiles/{id}', 'CandidateProfileController@show');
+    Route::post('candidates-profiles', 'CandidateProfileController@store');
+    Route::put('candidates-profiles/{id}', 'CandidateProfileController@update');
+    Route::delete('candidates-profiles/{id}', 'CandidateProfileController@delete');
+});
+
+Route::middleware('api')->group(function (){
+    Route::resource('email-templates', 'EmailTemplateController');
+    Route::resource('sources', 'SourceController');
+    Route::resource('positions', 'PositionController');
+    Route::resource('roles', 'RoleController')->except(['create', 'edit', 'delete']);
 });

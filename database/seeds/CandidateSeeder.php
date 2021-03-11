@@ -11,6 +11,6 @@ class CandidateSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Candidate::class, 55)->create();
+//        factory(App\Candidate::class, 55)->create();
     }
 }
