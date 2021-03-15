@@ -27,7 +27,8 @@ Route::middleware('api')->group(function () {
 });
 
 Route::middleware('api')->group(function (){
-    Route::resource('email-templates', 'EmailTemplateController');
+    Route::apiResource('email-templates', 'EmailTemplateController')->except(['delete']);
+    Route::delete('email-templates/{id}', 'EmailTemplateController@delete');
     Route::resource('sources', 'SourceController');
     Route::resource('positions', 'PositionController');
     Route::resource('roles', 'RoleController')->except(['create', 'edit', 'delete']);

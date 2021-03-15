@@ -64,4 +64,16 @@ class SourceController extends Controller
         $Source->delete();
         return response()->json(null, 204);
     }
+
+    /**
+     * Delete Source by id
+     * @param string $id
+     * @return JsonResponse
+     */
+    public function destroy(string $id): JsonResponse
+    {
+        $Source = Source::findOrFail($id);
+        $Source->delete();
+        return response()->json(null, 204);
+    }
 }

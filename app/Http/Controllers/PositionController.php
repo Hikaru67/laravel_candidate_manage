@@ -64,4 +64,16 @@ class PositionController extends Controller
         $Position->delete();
         return response()->json(null, 204);
     }
+
+    /**
+     * Delete Position by id
+     * @param string $id
+     * @return JsonResponse
+     */
+    public function destroy(string $id): JsonResponse
+    {
+        $Position = Position::findOrFail($id);
+        $Position->delete();
+        return response()->json(null, 204);
+    }
 }

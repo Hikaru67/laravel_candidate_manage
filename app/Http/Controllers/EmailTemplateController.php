@@ -64,4 +64,16 @@ class EmailTemplateController extends Controller
         $Email_Template->delete();
         return response()->json(null, 204);
     }
+
+    /**
+     * Delete Email_Template by id
+     * @param string $id
+     * @return JsonResponse
+     */
+    public function destroy(string $id): JsonResponse
+    {
+        $Email_Template = Email_Template::findOrFail($id);
+        $Email_Template->delete();
+        return response()->json(null, 204);
+    }
 }
