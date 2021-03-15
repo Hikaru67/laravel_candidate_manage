@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 
-class Cors
+class cors
 {
     /**
      * Handle an incoming request.
@@ -17,8 +17,8 @@ class Cors
     {
         return $next($request)
             ->header('Access-Control-Allow-Origin', '*')
-            ->header('Access-Control-Allow-Methods', '*')
-            ->header('Access-Control-Allow-Credentials', 'true')
-            ->header('Access-Control-Allow-Headers', 'X-CSRF-Token');
+            ->header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
+            ->header('Access-Control-Allow-Headers',' Origin, Content-Type, Accept, Authorization, X-Request-With')
+            ->header('Access-Control-Allow-Credentials',' true');
     }
 }
