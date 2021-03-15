@@ -3544,3 +3544,60 @@ Did you mean one of these?
 #33 /home/hikaru/learn-php/candidate-manage/laravel-candidate/server.php(21): require_once('/home/hikaru/le...')
 #34 {main}
 "} 
+[2021-03-15 10:40:45] local.ERROR: Command "make:" is ambiguous.
+Did you mean one of these?
+    make:cast         Create a new custom Eloquent ...
+    make:channel      Create a new channel class
+    make:component    Create a new view component c...
+    make:command      Create a new Artisan command
+    make:controller   Create a new controller class
+    make:event        Create a new event class
+    make:exception    Create a new custom exception...
+    make:factory      Create a new model factory
+    make:job          Create a new job class
+    make:listener     Create a new event listener c...
+    make:mail         Create a new email class
+    make:middleware   Create a new middleware class
+    make:model        Create a new Eloquent model c...
+    make:notification Create a new notification class
+    make:observer     Create a new observer class
+    make:policy       Create a new policy class
+    make:provider     Create a new service provider...
+    make:request      Create a new form request class
+    make:resource     Create a new resource
+    make:rule         Create a new validation rule
+    make:seeder       Create a new seeder class
+    make:test         Create a new test class
+    make:migration    Create a new migration file. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:\" is ambiguous.
+Did you mean one of these?
+    make:cast         Create a new custom Eloquent ...
+    make:channel      Create a new channel class
+    make:component    Create a new view component c...
+    make:command      Create a new Artisan command
+    make:controller   Create a new controller class
+    make:event        Create a new event class
+    make:exception    Create a new custom exception...
+    make:factory      Create a new model factory
+    make:job          Create a new job class
+    make:listener     Create a new event listener c...
+    make:mail         Create a new email class
+    make:middleware   Create a new middleware class
+    make:model        Create a new Eloquent model c...
+    make:notification Create a new notification class
+    make:observer     Create a new observer class
+    make:policy       Create a new policy class
+    make:provider     Create a new service provider...
+    make:request      Create a new form request class
+    make:resource     Create a new resource
+    make:rule         Create a new validation rule
+    make:seeder       Create a new seeder class
+    make:test         Create a new test class
+    make:migration    Create a new migration file. at /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/symfony/console/Application.php:716)
+[stacktrace]
+#0 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/symfony/console/Application.php(254): Symfony\\Component\\Console\\Application->find('make:')
+#1 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/symfony/console/Application.php(166): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
