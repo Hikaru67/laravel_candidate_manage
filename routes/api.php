@@ -33,3 +33,7 @@ Route::middleware('api')->group(function (){
     Route::resource('positions', 'PositionController');
     Route::resource('roles', 'RoleController')->except(['create', 'edit', 'delete']);
 });
+
+Route::group(['prefix' => 'api', 'as' => 'api.', 'middleware' => 'cors'], function () {
+    Route::get('api/email-templates', 'EmailTemplateController@index');
+});
