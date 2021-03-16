@@ -8,7 +8,7 @@ use Faker\Generator as Faker;
 $factory->define(Candidate_Profile::class, function (Faker $faker) {
     return [
         'first_name' => $faker->firstName,
-        'last_name' => $faker->unixTime(),
+        'last_name' => $faker->lastName,
         'position_id' => rand(1,4),
         'source_id' => rand(1,4),
         'received_date' => $faker->date('Y-m-d','now'),

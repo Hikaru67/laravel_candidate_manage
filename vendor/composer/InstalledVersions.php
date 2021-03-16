@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '1f8e8ad2436f4e23b774266d2c9b96515b0dd12e',
+    'reference' => '1e786d381a5ebe40954a75f1f7de232240fb4edd',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -445,7 +445,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '1f8e8ad2436f4e23b774266d2c9b96515b0dd12e',
+      'reference' => '1e786d381a5ebe40954a75f1f7de232240fb4edd',
     ),
     'laravel/tinker' => 
     array (
@@ -464,6 +464,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'd01a705763c243b07be795e9d1bb47f89260f73d',
+    ),
+    'lcobucci/jwt' => 
+    array (
+      'pretty_version' => '3.3.3',
+      'version' => '3.3.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c1123697f6a2ec29162b82f170dd4a491f524773',
     ),
     'league/commonmark' => 
     array (
@@ -522,6 +531,15 @@ private static $installed = array (
       array (
         0 => '1.10.2',
       ),
+    ),
+    'namshi/jose' => 
+    array (
+      'pretty_version' => '7.2.3',
+      'version' => '7.2.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '89a24d7eb3040e285dd5925fcad992378b82bcff',
     ),
     'nesbot/carbon' => 
     array (
@@ -1095,6 +1113,15 @@ private static $installed = array (
       ),
       'reference' => '5232de97ee3b75b0360528dae24e73db49566ab1',
     ),
+    'symfony/polyfill-php56' => 
+    array (
+      'pretty_version' => 'v1.20.0',
+      'version' => '1.20.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '54b8cd7e6c1643d78d011f3be89f3ef1f9f4c675',
+    ),
     'symfony/polyfill-php72' => 
     array (
       'pretty_version' => 'v1.22.1',
@@ -1209,6 +1236,16 @@ private static $installed = array (
       array (
       ),
       'reference' => 'b43b05cf43c1b6d849478965062b6ef73e223bb5',
+    ),
+    'tymon/jwt-auth' => 
+    array (
+      'pretty_version' => 'dev-develop',
+      'version' => 'dev-develop',
+      'aliases' => 
+      array (
+        0 => '1.0.x-dev',
+      ),
+      'reference' => 'ab00f2d7cce5f043067aef7849cdc792de2df635',
     ),
     'vlucas/phpdotenv' => 
     array (

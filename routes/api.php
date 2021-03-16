@@ -34,6 +34,19 @@ Route::middleware('api')->group(function (){
     Route::resource('roles', 'RoleController')->except(['create', 'edit', 'delete']);
 });
 
-Route::group(['prefix' => 'api', 'as' => 'api.', 'middleware' => 'cors'], function () {
+/*Route::group(['prefix' => 'api', 'as' => 'api.', 'middleware' => 'cors'], function () {
     Route::get('api/email-templates', 'EmailTemplateController@index');
+});*/
+
+Route::group(['middleware' => 'jwt.auth', 'prefix' => 'auth'], function () {
+    Route::get('api/email-templates', 'EmailTemplateController@index');
+    Route::get('logout', 'AuthController@logout');
+});
+
+Route::group(['namespace' => '\App\Http\Controllers',  ], function(){
+    Route::post('register', 'AuthController@register');
+    Route::post('login', 'AuthController@login');
+    Route::get('/logout', 'AuthController@logout');
+
+    Route::get('user', 'AuthController@user');
 });

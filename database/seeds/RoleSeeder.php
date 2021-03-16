@@ -15,7 +15,7 @@ class RoleSeeder extends Seeder
         $data = [
             [
                 'id' => 1,
-                'name'  => 'Hr',
+                'name'  => 'Human Resources',
                 'created_at' => now(),
             ],
             [
