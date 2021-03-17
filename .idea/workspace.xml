@@ -2,42 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c20fcf0-c7d0-4937-a14a-8e10a7478c74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyJWTToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/UserResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/JWT.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/jwt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-candidate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-candidate.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/packages.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/CandidateProfileFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CandidateProfileFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/40LjRJQawvMkIczHj3s6RufubKSX7VbWwk6mpHCn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/F1TRoM5naazEXQb0TrA7r3YD4GPSUpVxZdR4JH8O" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/cc9n6W5Hw7cbez2O4zk0IcZAxlqPhGT6PTVGh6SQ" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/ob3wAluneQGoc4mJr0xuOC0DTN4xXy8AzZ7fkA0d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +155,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mail-project/laravel_mail" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -218,7 +188,10 @@
       <workItem from="1615778378939" duration="15108000" />
       <workItem from="1615821263132" duration="3199000" />
       <workItem from="1615866694578" duration="6223000" />
-      <workItem from="1615907801384" duration="372000" />
+      <workItem from="1615907801384" duration="1390000" />
+      <workItem from="1615909581839" duration="28000" />
+      <workItem from="1615910677702" duration="11000" />
+      <workItem from="1615947084009" duration="1126000" />
     </task>
     <servers />
   </component>

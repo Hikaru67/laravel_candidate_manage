@@ -13,6 +13,8 @@ $factory->define(Candidate_Profile::class, function (Faker $faker) {
         'source_id' => rand(1,4),
         'received_date' => $faker->date('Y-m-d','now'),
         'interview_date' => $faker->date('Y-m-d','now'),
+        'feedback' => '',
         'cv_link' => $faker->unique()->url,
+        'note' => '',
     ];
 });
