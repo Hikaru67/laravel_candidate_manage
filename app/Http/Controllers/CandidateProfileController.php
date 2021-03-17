@@ -14,7 +14,7 @@ class CandidateProfileController extends Controller
      */
     public function index()
     {
-        return Candidate_Profile::all();
+        return Candidate_Profile::Paginate(10);
     }
 
     /**
