@@ -80,19 +80,23 @@ class EmailTemplateController extends Controller
 
     public function send_mail(Request $request){
         //sendmail
-        $this->validate($request, [
-            'name' => 'required',
-            'from' => 'required',
+        $request->validate([
+            'senderName' => 'required',
+            'receiver' => 'required',
+            'receiverName' => 'required',
             'title' => 'required',
             'content' => 'required'
         ]);
-        $email = $request;
-        $to_name = "Shopping All4You";
-        $to_email = "shinigamii.hikaru@gmail.com";//send to this mail
-
-        $data = array("name" => $request->get('name'), "body" => "Mail gửi về vấn đề ăn chơi");// Body ò mail.blade.php
-        Mail::send('mails',$data, function ($message) use ($to_name, $to_email){
-            $message->to($to_email)->subject('Test 01');//send this mail with subject
+        $to_name =  $request->get('receiverName');
+        $to_email = $request->get('receiver');//send to this mail
+        $dataEmail = array(
+            "receiverName" => $request->get('receiverName'),
+            "title" => $request->get('title'),
+            "body" => $request->get('content'),
+        );
+        $data = array("name" => $request->get('receiverName'), "body" => "Mail gửi về vấn đề ăn chơi");// Body ò mail.blade.php
+        Mail::send('mails',$dataEmail, function ($message) use ($to_name, $to_email, $dataEmail){
+            $message->to($to_email)->subject($dataEmail['title']);//send this mail with subject
             $message->from($to_email, $to_name);//send from this mail
         });
         //---send mail

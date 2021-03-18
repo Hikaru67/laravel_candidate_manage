@@ -51,9 +51,11 @@ Route::group(['namespace' => '\App\Http\Controllers',  ], function(){
     Route::get('/logout', 'AuthController@logout');
 
     Route::get('user', 'AuthController@user');
-    Route::get('/send-mail', function () {
+    /* Route::post('/send-mail', function () {
         Mail::to('shinigamii.hikaru@gmail.com')->send(new EmailNotification());
         return 'A message has been sent to by ngocthanh06!';
-    });
+    }); */
+    Route::post('/send-email', 'EmailTemplateController@send_mail');
+
 });
 

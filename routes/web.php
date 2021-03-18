@@ -21,9 +21,6 @@ Route::get('/', function () {
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/send-mail2', 'EmailTemplateController@send_mail');
-
-
 Route::get('/send-mail', function () {
     $order = 3;
     Mail::to('shinigamii.hikaru@gmail.com')->send(new EmailNotification());
