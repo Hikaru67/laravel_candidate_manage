@@ -29,6 +29,25 @@ class Candidate_Profile extends Model
         'note',
     ];
 
+    public function scopeName($query, $request)
+    {
+        if ($request->has('name')) {
+            $query->where('first_name', 'LIKE', '%' . $request->name . '%')
+                  ->where('last_name', 'LIKE', '%' . $request->name . '%');
+        }
+
+        return $query;
+    }
+
+    public function scopeReceiverDate($query, $request)
+    {
+        if ($request->has('received')) {
+            $query->whereDate('birthday', $request->birthday);
+        }
+
+        return $query;
+    }
+
     protected $primaryKey = 'id';
     protected $table = 'candidate_profiles';
 }

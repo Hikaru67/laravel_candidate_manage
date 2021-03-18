@@ -4,9 +4,7 @@
     <list default="true" id="9c20fcf0-c7d0-4937-a14a-8e10a7478c74" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Candidate_Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Candidate_Profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/CandidateProfileFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CandidateProfileFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_11_143129_create_candidate_profiles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_11_143129_create_candidate_profiles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/EmailTemplateSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/EmailTemplateSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c" afterDir="false" />
     </list>
@@ -193,7 +191,7 @@
       <workItem from="1615909581839" duration="28000" />
       <workItem from="1615910677702" duration="11000" />
       <workItem from="1615947084009" duration="9036000" />
-      <workItem from="1616037823086" duration="8447000" />
+      <workItem from="1616037823086" duration="13748000" />
     </task>
     <servers />
   </component>
