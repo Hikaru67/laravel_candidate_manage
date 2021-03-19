@@ -25,6 +25,7 @@ class CreateCandidateProfilesTable extends Migration
             $table->string('received_date')->default(now());
             $table->tinyInteger('filtered_result')->default(FILTERED_PENDING);
             $table->string('interview_date')->nullable();
+            $table->string('work_date')->nullable();
             $table->text('feedback')->nullable();
             $table->tinyInteger('interview_result')->default(INTERVIEW_PENDING);
             $table->text('cv_link');

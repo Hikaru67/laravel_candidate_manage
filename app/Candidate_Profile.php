@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static findOrFail(string $id)
  * @method static create(array $all)
  * @method static find(string $id)
+ * @method static filter(\Illuminate\Http\Request $request)
  */
 class Candidate_Profile extends Model
 {
@@ -32,6 +33,7 @@ class Candidate_Profile extends Model
         'received_date',
         'filtered_result',
         'interview_date',
+        'work_date',
         'feedback',
         'interview_result',
         'cv_link',
@@ -50,22 +52,22 @@ class Candidate_Profile extends Model
 
     public function filterPosition($query, $value)
     {
-        return $query->where('position_id', '=', $value);
+        return $query->where('position_id', $value);
     }
 
     public function filterSource($query, $value)
     {
-        return $query->where('source_id', '=', $value);
+        return $query->where('source_id', $value);
     }
 
     public function filterReceiverDateFrom($query, $value)
     {
-        return $query->whereDate('receiver_date', '>=' , $value);
+        return $query->whereDate('received_date', '>=' , $value);
     }
 
     public function filterReceiverDateTo($query, $value)
     {
-        return $query->whereDate('receiver_date', '<=' , $value);
+        return $query->whereDate('received_date', '<=' , $value);
     }
 
     protected $primaryKey = 'id';

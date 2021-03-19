@@ -9,7 +9,7 @@ use \Illuminate\Http\JsonResponse;
 class CandidateProfileController extends Controller
 {
     /**
-     * Get all Candidate_profiles in the db
+     * Get all Candidate_profiles in the db with option condition
      * @return Candidate_Profile[]
      */
     public function index(Request $request)
