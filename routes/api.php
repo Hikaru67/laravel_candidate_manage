@@ -1,5 +1,7 @@
 <?php
 
+use App\Mail\EmailNotification;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -49,4 +51,11 @@ Route::group(['namespace' => '\App\Http\Controllers',  ], function(){
     Route::get('/logout', 'AuthController@logout');
 
     Route::get('user', 'AuthController@user');
+    /* Route::post('/send-mail', function () {
+        Mail::to('shinigamii.hikaru@gmail.com')->send(new EmailNotification());
+        return 'A message has been sent to by ngocthanh06!';
+    }); */
+    Route::post('/send-email', 'EmailTemplateController@send_mail');
+
 });
+

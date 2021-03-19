@@ -16,18 +16,21 @@ class EmailTemplateSeeder extends Seeder
         $faker = Factory::create();
         $data = [
             [
-                'name'  => 'Thank email',
-                'title' => $faker->unique()->jobTitle,
-                'content' => $faker->unique()->realText(),
-                'created_at' => now(),
-            ],
-            [
+                'id' => 1,
                 'name'  => 'Schedule interview email',
                 'title' => $faker->unique()->jobTitle,
                 'content' => $faker->unique()->realText(),
                 'created_at' => now(),
             ],
             [
+                'id' => 2,
+                'name'  => 'Thank email',
+                'title' => $faker->unique()->jobTitle,
+                'content' => $faker->unique()->realText(),
+                'created_at' => now(),
+            ],
+            [
+                'id' => 3,
                 'name'  => 'schedule work email',
                 'title' => $faker->unique()->jobTitle,
                 'content' => $faker->unique()->realText(),

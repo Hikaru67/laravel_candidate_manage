@@ -40,6 +40,10 @@ return array(
     'App\\Http\\Middleware\\VerifyJWTToken' => $baseDir . '/app/Http/Middleware/VerifyJWTToken.php',
     'App\\Http\\Middleware\\cors' => $baseDir . '/app/Http/Middleware/cors.php',
     'App\\Http\\Resources\\UserResource' => $baseDir . '/app/Http/Resources/UserResource.php',
+<<<<<<< HEAD
+=======
+    'App\\Mail\\EmailNotification' => $baseDir . '/app/Mail/EmailNotification.php',
+>>>>>>> master
     'App\\Position' => $baseDir . '/app/Position.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',

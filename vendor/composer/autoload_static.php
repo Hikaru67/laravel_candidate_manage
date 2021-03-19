@@ -551,6 +551,10 @@ class ComposerStaticInit4f7c083046539e0b2edf49a10e5fdad4
         'App\\Http\\Middleware\\VerifyJWTToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyJWTToken.php',
         'App\\Http\\Middleware\\cors' => __DIR__ . '/../..' . '/app/Http/Middleware/cors.php',
         'App\\Http\\Resources\\UserResource' => __DIR__ . '/../..' . '/app/Http/Resources/UserResource.php',
+<<<<<<< HEAD
+=======
+        'App\\Mail\\EmailNotification' => __DIR__ . '/../..' . '/app/Mail/EmailNotification.php',
+>>>>>>> master
         'App\\Position' => __DIR__ . '/../..' . '/app/Position.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',

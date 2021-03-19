@@ -9,12 +9,13 @@ use \Illuminate\Http\JsonResponse;
 class CandidateProfileController extends Controller
 {
     /**
-     * Get all Candidate_profiles in the db
+     * Get all Candidate_profiles in the db with option condition
      * @return Candidate_Profile[]
      */
-    public function index()
+    public function index(Request $request)
     {
-        return Candidate_Profile::all();
+        // return Candidate_Profile::Paginate(10);
+        return $user = Candidate_Profile::filter($request)->Paginate(10);
     }
 
     /**
