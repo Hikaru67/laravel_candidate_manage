@@ -12,9 +12,10 @@ class CandidateProfileController extends Controller
      * Get all Candidate_profiles in the db
      * @return Candidate_Profile[]
      */
-    public function index()
+    public function index(Request $request)
     {
-        return Candidate_Profile::Paginate(10);
+        // return Candidate_Profile::Paginate(10);
+        return $user = Candidate_Profile::filter($request)->Paginate(10);
     }
 
     /**

@@ -15,6 +15,12 @@ class Candidate_Profile extends Model
     use Filterable;
 
     public $timestamps = true;
+
+    protected $filterable = [
+        'position_id' => 'position',
+        'source_id' => 'source',
+        'gender'
+    ];
     protected $fillable = [
         'first_name',
         'last_name',
@@ -34,30 +40,32 @@ class Candidate_Profile extends Model
 
     public function filterFirstName($query, $value)
     {
-        return $query->where('first_name', 'LIKE', '%' . $value->firstName . '%')
-                    ->where('last_name', 'LIKE', '%' . $value->lastName . '%');
+        return $query->where('first_name', 'LIKE', '%' . $value. '%');
     }
 
     public function filterLastName($query, $value)
     {
-        return $query->where('first_name', 'LIKE', '%' . $value->firstName . '%')
-            ->where('last_name', 'LIKE', '%' . $value->lastName . '%');
+        return $query->where('last_name', 'LIKE', '%' . $value . '%');
     }
 
     public function filterPosition($query, $value)
     {
-        return $query->where('position', '=', $value->position);
+        return $query->where('position_id', '=', $value);
     }
 
     public function filterSource($query, $value)
     {
-        return $query->where('source', '=', $value->source);
+        return $query->where('source_id', '=', $value);
     }
 
     public function filterReceiverDateFrom($query, $value)
     {
-        return $query->whereDate('receiver_date', '>=' , $value->receiverDateFrom)
-                    ->whereDate('receiver_date', '<=' , $value->receiverDateTo);
+        return $query->whereDate('receiver_date', '>=' , $value);
+    }
+
+    public function filterReceiverDateTo($query, $value)
+    {
+        return $query->whereDate('receiver_date', '<=' , $value);
     }
 
     protected $primaryKey = 'id';
