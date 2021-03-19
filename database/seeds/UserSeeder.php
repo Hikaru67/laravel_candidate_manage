@@ -30,7 +30,7 @@ class UserSeeder extends Seeder
             ]
         ];
 
-        Source::insert($data);
+        \App\User::insert($data);
         factory(App\User::class, 5)->create();
     }
 }

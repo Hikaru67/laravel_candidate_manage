@@ -10233,3 +10233,109 @@ Did you mean one of these?
 #52 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/server.php(21): require_once('/home/hikaru/le...')
 #53 {main}
 "} 
+[2021-03-19 08:59:26] local.ERROR: Command "make:traits" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:traits\" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/symfony/console/Application.php:675)
+[stacktrace]
+#0 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/symfony/console/Application.php(254): Symfony\\Component\\Console\\Application->find('make:traits')
+#1 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/symfony/console/Application.php(166): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-03-19 09:09:19] local.ERROR: Class 'Source' not found {"exception":"[object] (Error(code: 0): Class 'Source' not found at /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/database/seeds/UserSeeder.php:33)
+[stacktrace]
+#0 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): UserSeeder->run()
+#1 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/Container.php(596): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(134): Illuminate\\Container\\Container->call(Array)
+#6 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(48): Illuminate\\Database\\Seeder->__invoke()
+#7 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/database/seeds/DatabaseSeeder.php(20): Illuminate\\Database\\Seeder->call('UserSeeder')
+#8 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): DatabaseSeeder->run()
+#9 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#11 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#12 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/Container.php(596): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#13 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(134): Illuminate\\Container\\Container->call(Array)
+#14 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(65): Illuminate\\Database\\Seeder->__invoke()
+#15 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/GuardsAttributes.php(155): Illuminate\\Database\\Console\\Seeds\\SeedCommand->Illuminate\\Database\\Console\\Seeds\\{closure}()
+#16 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(66): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#17 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Seeds\\SeedCommand->handle()
+#18 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#19 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#20 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#21 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/Container.php(596): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#22 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call(Array)
+#23 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/symfony/console/Command/Command.php(256): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#24 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#25 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(56): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#26 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(28): Illuminate\\Console\\Command->runCommand('db:seed', Array, Object(Illuminate\\Console\\OutputStyle))
+#27 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RefreshCommand.php(128): Illuminate\\Console\\Command->call('db:seed', Array)
+#28 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RefreshCommand.php(67): Illuminate\\Database\\Console\\Migrations\\RefreshCommand->runSeeder(NULL)
+#29 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\RefreshCommand->handle()
+#30 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#31 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#32 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#33 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Container/Container.php(596): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#34 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call(Array)
+#35 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/symfony/console/Command/Command.php(256): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#36 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#37 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/symfony/console/Application.php(971): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#38 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/symfony/console/Application.php(290): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\RefreshCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#39 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/symfony/console/Application.php(166): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#40 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#41 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#42 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#43 {main}
+"} 

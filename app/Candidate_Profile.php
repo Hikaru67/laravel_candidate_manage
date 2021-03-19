@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Traits\Filterable;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -11,6 +12,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Candidate_Profile extends Model
 {
+    use Filterable;
+
     public $timestamps = true;
     protected $fillable = [
         'first_name',
@@ -29,23 +32,32 @@ class Candidate_Profile extends Model
         'note',
     ];
 
-    public function scopeName($query, $request)
+    public function filterFirstName($query, $value)
     {
-        if ($request->has('name')) {
-            $query->where('first_name', 'LIKE', '%' . $request->name . '%')
-                  ->where('last_name', 'LIKE', '%' . $request->name . '%');
-        }
-
-        return $query;
+        return $query->where('first_name', 'LIKE', '%' . $value->firstName . '%')
+                    ->where('last_name', 'LIKE', '%' . $value->lastName . '%');
     }
 
-    public function scopeReceiverDate($query, $request)
+    public function filterLastName($query, $value)
     {
-        if ($request->has('received')) {
-            $query->whereDate('birthday', $request->birthday);
-        }
+        return $query->where('first_name', 'LIKE', '%' . $value->firstName . '%')
+            ->where('last_name', 'LIKE', '%' . $value->lastName . '%');
+    }
 
-        return $query;
+    public function filterPosition($query, $value)
+    {
+        return $query->where('position', '=', $value->position);
+    }
+
+    public function filterSource($query, $value)
+    {
+        return $query->where('source', '=', $value->source);
+    }
+
+    public function filterReceiverDateFrom($query, $value)
+    {
+        return $query->whereDate('receiver_date', '>=' , $value->receiverDateFrom)
+                    ->whereDate('receiver_date', '<=' , $value->receiverDateTo);
     }
 
     protected $primaryKey = 'id';
