@@ -7994,3 +7994,49 @@ Did you mean one of these?
 #41 /home/hikaru/learn-php/candidate-manage/laravel-candidate-manage/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #42 {main}
 "} 
+[2021-03-17 15:16:31] local.ERROR: include(D:\DIGI DINOS\CV\laravel_candidate_manage\vendor\composer/../tymon/jwt-auth/src/Providers/LaravelServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\composer/../tymon/jwt-auth/src/Providers/LaravelServiceProvider.php): failed to open stream: No such file or directory at D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\composer\\ClassLoader.php:444)
+[stacktrace]
+#0 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\composer\\ClassLoader.php(444): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(D:\\\\DIGI...', 'D:\\\\DIGI DINOS\\\\C...', 444, Array)
+#1 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\composer\\ClassLoader.php(444): include()
+#2 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\composer\\ClassLoader.php(322): Composer\\Autoload\\includeFile('D:\\\\DIGI DINOS\\\\C...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Tymon\\\\JWTAuth\\\\P...')
+#4 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(690): spl_autoload_call('Tymon\\\\JWTAuth\\\\P...')
+#5 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(624): Illuminate\\Foundation\\Application->resolveProvider('Tymon\\\\JWTAuth\\\\P...')
+#6 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register('Tymon\\\\JWTAuth\\\\P...')
+#7 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(604): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#8 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#9 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main}
+"} 
+[2021-03-17 15:21:15] local.ERROR: include(D:\DIGI DINOS\CV\laravel_candidate_manage\vendor\composer/../tymon/jwt-auth/src/Providers/LaravelServiceProvider.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\composer/../tymon/jwt-auth/src/Providers/LaravelServiceProvider.php): failed to open stream: No such file or directory at D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\composer\\ClassLoader.php:444)
+[stacktrace]
+#0 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\composer\\ClassLoader.php(444): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(D:\\\\DIGI...', 'D:\\\\DIGI DINOS\\\\C...', 444, Array)
+#1 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\composer\\ClassLoader.php(444): include()
+#2 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\composer\\ClassLoader.php(322): Composer\\Autoload\\includeFile('D:\\\\DIGI DINOS\\\\C...')
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('Tymon\\\\JWTAuth\\\\P...')
+#4 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(690): spl_autoload_call('Tymon\\\\JWTAuth\\\\P...')
+#5 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(624): Illuminate\\Foundation\\Application->resolveProvider('Tymon\\\\JWTAuth\\\\P...')
+#6 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register('Tymon\\\\JWTAuth\\\\P...')
+#7 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(604): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#8 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#9 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main}
+"} 
+[2021-03-17 15:22:15] local.ERROR: Class 'Tymon\JWTAuth\Providers\LaravelServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Tymon\\JWTAuth\\Providers\\LaravelServiceProvider' not found at D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php:208)
+[stacktrace]
+#0 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('Tymon\\\\JWTAuth\\\\P...')
+#1 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(604): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 D:\\DIGI DINOS\\CV\\laravel_candidate_manage\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
