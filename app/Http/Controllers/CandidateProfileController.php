@@ -14,8 +14,7 @@ class CandidateProfileController extends Controller
      */
     public function index(Request $request)
     {
-        // return Candidate_Profile::Paginate(10);
-        return $user = Candidate_Profile::filter($request)->Paginate(10);
+        return $user = Candidate_Profile::filter($request)->orderBy('created_at', 'desc')->Paginate(10);
     }
 
     /**

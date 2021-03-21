@@ -22,7 +22,7 @@ class CreateCandidateProfilesTable extends Migration
             $table->tinyInteger('gender')->default(0);
             $table->foreignId('position_id')->constrained('positions')->onDelete('cascade');
             $table->foreignId('source_id')->constrained('sources')->onDelete('cascade');
-            $table->string('received_date')->default(now());
+            $table->integer('received_date');
             $table->tinyInteger('filtered_result')->default(FILTERED_PENDING);
             $table->string('interview_date')->nullable();
             $table->string('work_date')->nullable();

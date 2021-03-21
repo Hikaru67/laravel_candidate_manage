@@ -14,7 +14,7 @@ $factory->define(Candidate_Profile::class, function (Faker $faker) {
         'gender' => rand(0,2),
         'position_id' => rand(1,4),
         'source_id' => rand(1,4),
-        'received_date' => $faker->unixTime,
+        'received_date' => $faker->unixTime('now'),
         'feedback' => '',
         'cv_link' => $faker->unique()->url,
         'note' => '',

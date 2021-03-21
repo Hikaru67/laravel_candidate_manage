@@ -60,14 +60,14 @@ class Candidate_Profile extends Model
         return $query->where('source_id', $value);
     }
 
-    public function filterReceiverDateFrom($query, $value)
+    public function filterReceivedDateFrom($query, $value)
     {
-        return $query->whereDate('received_date', '>=' , $value);
+        return $query->where('received_date', '>=' , $value);
     }
 
-    public function filterReceiverDateTo($query, $value)
+    public function filterReceivedDateTo($query, $value)
     {
-        return $query->whereDate('received_date', '<=' , $value);
+        return $query->where('received_date', '<=' , $value);
     }
 
     protected $primaryKey = 'id';

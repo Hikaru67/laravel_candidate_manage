@@ -13,9 +13,9 @@ class EmailTemplateController extends Controller
      * Get all Email_Templates in the db
      * @return Email_Template[]
      */
-    public function index()
+    public function index(Request $request)
     {
-        return Email_Template::all();
+        return Email_Template::filter($request)->orderBy('id', 'desc')->get();
     }
 
     /**
