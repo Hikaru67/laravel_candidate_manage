@@ -6,9 +6,20 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gửi mail</title>
+    <style>
+        .content{
+            color: #0000ff;
+        }
+    </style>
 </head>
 <body>
-<h3>Dear {{ $receiverName }}</h3>
-<h4>{{$body}}</h4>
+<div class="content">
+    <h3>Dear {{ $receiverName }}</h3>
+
+    @for($i=0; $i<count($body); $i++)
+        <span>{{ $body[$i] }}</span>
+        <br>
+    @endfor
+</div>
 </body>
 </html>

@@ -2,9 +2,9 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Email_Template;
+use App\EmailTemplate;
 use Faker\Generator as Faker;
 
-$factory->define(Email_Template::class, function (Faker $faker) {
+$factory->define(EmailTemplate::class, function (Faker $faker) {
     //
 });

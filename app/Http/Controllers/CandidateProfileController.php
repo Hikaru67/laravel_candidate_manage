@@ -3,65 +3,65 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Candidate_Profile;
+use App\CandidateProfile;
 use \Illuminate\Http\JsonResponse;
 
 class CandidateProfileController extends Controller
 {
     /**
-     * Get all Candidate_profiles in the db with option condition
-     * @return Candidate_Profile[]
+     * Get all CandidateProfiles in the db with option condition
+     * @return CandidateProfile[]
      */
     public function index(Request $request)
     {
-        return $user = Candidate_Profile::filter($request)->orderBy('created_at', 'desc')->Paginate(10);
+        return $user = CandidateProfile::filter($request)->orderBy('created_at', 'desc')->Paginate(10);
     }
 
     /**
-     * Get Candidate_Profile by id
+     * Get CandidateProfile by id
      * @param string $id
-     * @return Candidate_Profile|null
+     * @return CandidateProfile|null
      */
-    public function show(string $id): ?Candidate_Profile
+    public function show(string $id): ?CandidateProfile
     {
-        return Candidate_Profile::find($id);
+        return CandidateProfile::find($id);
     }
 
     /**
-     * Add a Candidate_Profile to db
+     * Add a CandidateProfile to db
      * @param Request $request
      * @return JsonResponse
      */
     public function store(Request $request): JsonResponse
     {
-        $Candidate_Profile = Candidate_Profile::create($request->all());
+        $CandidateProfile = CandidateProfile::create($request->all());
 
-        return response()->json($Candidate_Profile, 201);
+        return response()->json($CandidateProfile, 201);
     }
 
     /**
-     * Update Candidate_Profile by id
+     * Update CandidateProfile by id
      * @param Request $request
      * @param string $id
      * @return JsonResponse
      */
     public function update(Request $request, string $id): JsonResponse
     {
-        $Candidate_Profile = Candidate_Profile::findOrFail($id);
-        $Candidate_Profile->update($request->all());
+        $CandidateProfile = CandidateProfile::findOrFail($id);
+        $CandidateProfile->update($request->all());
 
-        return response()->json($Candidate_Profile, 200);
+        return response()->json($CandidateProfile, 200);
     }
 
     /**
-     * Delete Candidate_Profile by id
+     * Delete CandidateProfile by id
      * @param string $id
      * @return JsonResponse
      */
     public function delete(string $id): JsonResponse
     {
-        $Candidate_Profile = Candidate_Profile::findOrFail($id);
-        $Candidate_Profile->delete();
+        $CandidateProfile = CandidateProfile::findOrFail($id);
+        $CandidateProfile->delete();
         return response()->json(null, 204);
     }
 }

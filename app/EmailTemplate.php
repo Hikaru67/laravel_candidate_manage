@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static findOrFail(string $id)
  * @method static filter(\Illuminate\Http\Request $request)
  */
-class Email_Template extends Model
+class EmailTemplate extends Model
 {
     use Filterable;
 

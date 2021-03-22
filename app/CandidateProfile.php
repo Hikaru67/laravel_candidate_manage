@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static find(string $id)
  * @method static filter(\Illuminate\Http\Request $request)
  */
-class Candidate_Profile extends Model
+class CandidateProfile extends Model
 {
     use Filterable;
 

@@ -3,103 +3,117 @@
 namespace App\Http\Controllers;
 
 use Mail;
-use App\Email_Template;
+use App\EmailTemplate;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
+use Exception;
 
 class EmailTemplateController extends Controller
 {
     /**
-     * Get all Email_Templates in the db
-     * @return Email_Template[]
+     * Get all EmailTemplates in the db
+     * @return EmailTemplate[]
      */
     public function index(Request $request)
     {
-        return Email_Template::filter($request)->orderBy('id', 'desc')->get();
+        return EmailTemplate::filter($request)->orderBy('id', 'desc')->get();
     }
 
     /**
-     * Get Email_Template by id
+     * Get EmailTemplate by id
      * @param string $id
-     * @return Email_Template|null
+     * @return EmailTemplate|null
      */
-    public function show(string $id): ?Email_Template
+    public function show(string $id): ?EmailTemplate
     {
-        return Email_Template::find($id);
+        return EmailTemplate::find($id);
     }
 
     /**
-     * Add a Email_Template to db
+     * Add a EmailTemplate to db
      * @param Request $request
      * @return JsonResponse
      */
     public function store(Request $request): JsonResponse
     {
-        $Email_Template = Email_Template::create($request->all());
+        $EmailTemplate = EmailTemplate::create($request->all());
 
-        return response()->json($Email_Template, 201);
+        return response()->json($EmailTemplate, 201);
     }
 
     /**
-     * Update Email_Template by id
+     * Update EmailTemplate by id
      * @param Request $request
      * @param string $id
      * @return JsonResponse
      */
     public function update(Request $request, string $id): JsonResponse
     {
-        $Email_Template = Email_Template::findOrFail($id);
-        $Email_Template->update($request->all());
+        $EmailTemplate = EmailTemplate::findOrFail($id);
+        $EmailTemplate->update($request->all());
 
-        return response()->json($Email_Template, 200);
+        return response()->json($EmailTemplate, 200);
     }
 
     /**
-     * Delete Email_Template by id
+     * Delete EmailTemplate by id
      * @param string $id
      * @return JsonResponse
      */
     public function delete(string $id): JsonResponse
     {
-        $Email_Template = Email_Template::findOrFail($id);
-        $Email_Template->delete();
+        $EmailTemplate = EmailTemplate::findOrFail($id);
+        $EmailTemplate->delete();
         return response()->json(null, 204);
     }
 
     /**
-     * Delete Email_Template by id
+     * Delete EmailTemplate by id
      * @param string $id
      * @return JsonResponse
      */
     public function destroy(string $id): JsonResponse
     {
-        $Email_Template = Email_Template::findOrFail($id);
-        $Email_Template->delete();
+        $EmailTemplate = EmailTemplate::findOrFail($id);
+        $EmailTemplate->delete();
         return response()->json(null, 204);
     }
 
-    public function send_mail(Request $request){
-        //sendmail
-        $request->validate([
-            'senderName' => 'required',
-            'receiver' => 'required',
-            'receiverName' => 'required',
-            'title' => 'required',
-            'content' => 'required'
-        ]);
-        $to_name =  $request->get('receiverName');
-        $to_email = $request->get('receiver');//send to this mail
-        $dataEmail = array(
-            "receiverName" => $request->get('receiverName'),
-            "title" => $request->get('title'),
-            "body" => $request->get('content'),
-        );
-        $data = array("name" => $request->get('receiverName'), "body" => "Mail gửi về vấn đề ăn chơi");// Body ò mail.blade.php
-        Mail::send('mails',$dataEmail, function ($message) use ($to_name, $to_email, $dataEmail){
-            $message->to($to_email)->subject($dataEmail['title']);//send this mail with subject
-            $message->from($to_email, $to_name);//send from this mail
-        });
-        //---send mail
-//        return redirect('/')->with('message','');
+    public function sendEmail(Request $request): JsonResponse
+    {
+        try {
+            //sendmail
+            $request->validate([
+                'senderName' => 'required',
+                'receiver' => 'required',
+                'receiverName' => 'required',
+                'title' => 'required',
+                'content' => 'required'
+            ]);
+            $to_name =  $request->get('receiverName');
+            $to_email = $request->get('receiver');//send to this mail
+            $dataEmail = array(
+                "receiverName" => $request->get('receiverName'),
+                "title" => $request->get('title'),
+                "time" => $request->get('time'),
+                "salary" => $request->get('salary'),
+                "body" => $request->get('content'),
+            );
+            $dataEmail['body'] = explode("\n", $dataEmail['body']);
+//             dd($dataEmail['body']);
+            Mail::send('mails',$dataEmail, function ($message) use ($to_name, $to_email, $dataEmail){
+                $message->to($to_email)->subject($dataEmail['title']);//send this mail with subject
+                $message->from($to_email, $to_name);//send from this mail
+            });
+
+            return response()->json([
+                "meta" => ["code" => 200, "msg" => 'Send email success']],
+                200);
+        }catch (Exception $ex){
+            return response()->json([
+                "meta" => ["code" => 500, "msg" => "SERVER ERROR"],
+                "data" => $ex->getPrevious()],
+                500);
+        }
     }
 }

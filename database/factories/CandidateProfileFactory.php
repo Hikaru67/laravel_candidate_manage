@@ -2,10 +2,10 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Candidate_Profile;
+use App\CandidateProfile;
 use Faker\Generator as Faker;
 
-$factory->define(Candidate_Profile::class, function (Faker $faker) {
+$factory->define(CandidateProfile::class, function (Faker $faker) {
     return [
         'first_name' => $faker->firstName,
         'last_name' => $faker->lastName,

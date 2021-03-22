@@ -55,7 +55,7 @@ Route::group(['namespace' => '\App\Http\Controllers',  ], function(){
         Mail::to('shinigamii.hikaru@gmail.com')->send(new EmailNotification());
         return 'A message has been sent to by ngocthanh06!';
     }); */
-    Route::post('/send-email', 'EmailTemplateController@send_mail');
+    Route::post('/send-email', 'EmailTemplateController@sendEmail');
 
 });
 
